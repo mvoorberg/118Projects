@@ -13,6 +13,34 @@
       <script>
         console.log("Header is loaded");
       </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async ></script>
+
+    <!-- Fix for the overlapping Masonry elements! -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+    <script>
+        window.onload = (event) => {
+            console.log("page is fully loaded");
+            // Target the Masonry container
+            var masonryRow = document.querySelector('.row[data-masonry]'); 
+            if (masonryRow) {
+                // Initialize Masonry after all images have loaded
+                imagesLoaded(masonryRow, function() {
+                    console.log("Initialize Masonry after all images have loaded");
+                    new Masonry(masonryRow, {
+                        itemSelector: '.col-12, .col-md-6, .col-lg-4, .col-xl-3', // Targeting the grid items
+                        percentPosition: true // Since you have 'percentPosition' in your data attribute
+                    });
+                });
+            } else {
+                console.log("Masonry container not found!");
+            }
+        };
+    </script>
+
 </head>
 
 <body>
@@ -110,7 +138,7 @@
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="card card-hover">
                     <div class="image-container">
-                        <img src="media/example1.png" onload="console.log('image loaded!')" alt="Project Thumbnail">
+                        <img src="media/example1.png" onload="console.log('image 1 loaded!')" alt="Project Thumbnail">
                         <a href="https://zachsmh.github.io/118Projects/midterm/index.html" target="_blank">
                             <div class="overlay">Tire Brand Website</div>
                         </a>
@@ -124,7 +152,7 @@
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="card card-hover">
                     <div class="image-container">
-                        <img src="media/example2.png" onload="console.log('image loaded!')" alt="Project Thumbnail">
+                        <img src="media/example2.png" onload="console.log('image 2 loaded!')" alt="Project Thumbnail">
                         <a href="https://zachsmh.github.io/118Projects/Lab03/index.html" target="_blank">
                             <div class="overlay">Order Form</div>
                         </a>
@@ -138,7 +166,7 @@
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="card card-hover">
                     <div class="image-container">
-                        <img src="media/example3.png" onload="console.log('image loaded!')" alt="Project Thumbnail">
+                        <img src="media/example3.png" onload="console.log('image 3 loaded!')" alt="Project Thumbnail">
                         <a href="https://zachsmh.github.io/118Projects/Lab05/index.html" target="_blank">
                             <div class="overlay">Bakery Storefront</div>
                         </a>
@@ -152,7 +180,7 @@
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="card card-hover">
                     <div class="image-container">
-                        <img src="media/example4.png" onload="console.log('image loaded!')" alt="Project Thumbnail">
+                        <img src="media/example4.png" onload="console.log('image 4 loaded!')" alt="Project Thumbnail">
                         <a href="https://zachsmh.github.io/118Projects/Lab07/index.html" target="_blank">
                             <div class="overlay">Advisor Booking Site</div>
                         </a>
@@ -166,7 +194,7 @@
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="card card-hover">
                     <div class="image-container">
-                        <img src="media/place1.svg" onload="console.log('image loaded!')" alt="Project Thumbnail">
+                        <img src="media/place1.svg" onload="console.log('image 5 loaded!')" alt="Project Thumbnail">
                         <a href="" target="_blank">
                             <div class="overlay">New Project</div>
                         </a>
@@ -180,7 +208,7 @@
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="card card-hover">
                     <div class="image-container">
-                        <img src="media/place1.svg" onload="console.log('image loaded!')" alt="Project Thumbnail">
+                        <img src="media/place1.svg" onload="console.log('image 6 loaded!')" alt="Project Thumbnail">
                         <a href="" target="_blank">
                             <div class="overlay">New Project</div>
                         </a>
@@ -219,28 +247,6 @@
             </div>
         </div>
     </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
-        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
-        ></script>
-
-    <!-- Fix for the overlapping Masonry elements! -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
-    <script>
-        // Target the Masonry container
-        var masonryRow = document.querySelector('.row[data-masonry]'); 
-        if (masonryRow) {
-            // Initialize Masonry after all images have loaded
-            imagesLoaded(masonryRow, function() {
-                console.log("Initialize Masonry after all images have loaded");
-                new Masonry(masonryRow, {
-                    itemSelector: '.col-12, .col-md-6, .col-lg-4, .col-xl-3', // Targeting the grid items
-                    percentPosition: true // Since you have 'percentPosition' in your data attribute
-                });
-            });
-        }
-    </script>
 
 </body>
 
