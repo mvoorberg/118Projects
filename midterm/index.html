@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+    <meta name="author" content="Zach Voorberg" />
+    <title>RUBR tires</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/font-awesome/css/all.css" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  </head>
+  <body>
+      <header class="bg-colored">
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">RUBR</span> Tires</h1>
+        </div>
+        <nav>
+          <label for="toggle">&#9776;</label>
+          <input type="checkbox" id="toggle"/>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about_anchor">About</a></li>
+            <li><a href="#styles_anchor">Styles</a></li>
+            <li><a href="#gallery_anchor">Gallery</a></li>
+            <li><a href="#pricing_anchor">Pricing</a></li>
+            <li><a href="#contact_anchor">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="theme-switcher">
+      <label for="light_theme" class="theme-label">Light <i class="fas fa-sun"></i></label>
+      
+      <label for="dark_theme" class="theme-label">Dark <i class="fas fa-moon"></i></label>
+    </div>
+    
+    <input type="radio" name="theme" id="light_theme" checked />
+    <input type="radio" name="theme" id="dark_theme" />
+
+    <div class="page_color">
+    <section id="showcase" >
+      <div class="container" style="z-index: 5;">
+        <h2>RUBR Tires</h2>
+        <p>Conquer every trail with confidence</p>
+        <button class="about-button"><a href="#about">Learn More</a></button>
+        <div style="height: 200px;"></div>
+      </div>
+    </section>
+    <video autoplay="" muted="" loop="" >
+      <source src="video/bgVideo.mp4" type="video/mp4" />
+    </video>
+    <!--about-->
+    <a class="anchor" id="about_anchor"></a>
+    <section id="about" class="section_layout">
+
+      <div class="container">
+        <h1>About RUBR Tires</h1>
+        <p>
+          At RUBR Tires, we believe in providing top-quality tires that help you
+          conquer every trail with confidence. Whether you're bombing through
+          tough terrain or cruising on cross-country trails, our durable,
+          high-performance tires ensure a smooth and safe ride.
+        </p>
+      </div>
+    </section>
+    <!--items-->
+    <a class="anchor" id="styles_anchor"></a>
+    <section id="styles" class="section_layout">
+      <div class="container">
+        <h1>Our Tire Styles</h1>
+        <div class="styles">
+          <div class="style-item">
+            <img src="images/Aggressor.jpg" alt="Aggressor" />
+            <h3>Aggressor</h3>
+            <p>Rear tire for dry, rocky terrain</p>
+          </div>
+          <div class="style-item">
+            <img src="images/Assegai.jpg" alt="Assegai" />
+            <h3>Assegai</h3>
+            <p>Greg Minnaar's signature tire</p>
+          </div>
+          <div class="style-item">
+            <img src="images/Disector.jpg" alt="Disector" />
+            <h3>Disector</h3>
+            <p>Troy Brosnan's signature tire</p>
+          </div>
+          <div class="style-item">
+            <img src="images/HighRoller.jpg" alt="HighRoller" />
+            <h3>HighRoller II</h3>
+            <p>A legend reborn</p>
+          </div>
+          <div class="style-item">
+            <img src="images/MinionDHF.jpg" alt="MinionDHF" />
+            <h3>MinionDHF</h3>
+            <p>The gold standard of tires</p>
+          </div>
+          <div class="style-item">
+            <img src="images/MinionDHR.jpg" alt="MinionDHR" />
+            <h3>MinionDHR</h3>
+            <p>A perfect match to the DHF</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--gallery-->
+    <a class="anchor" id="gallery_anchor"></a>
+    <section id="gallery" class="section_layout">
+      <div class="container">
+        <h1>Gallery</h1>
+        <div class="gallery">
+          <div class="gallery-item">
+            <a href="images/Image1.jpg" target="_blank">
+              <img src="images/Image1.sm.jpg" alt="Rider Photo" />
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a href="images/Image2.jpg" target="_blank">
+              <img src="images/Image2.sm.jpg" alt="Rider Photo" />
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a href="images/Image3.jpg" target="_blank">
+              <img src="images/Image3.sm.jpg" alt="Rider Photo" />
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a href="images/Image4.jpg" target="_blank">
+              <img src="images/Image4.sm.jpg" alt="Rider Photo" />
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a href="images/Image5.jpg" target="_blank">
+              <img src="images/Image5.sm.jpg" alt="Rider Photo" />
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a href="images/Image6.jpg" target="_blank">
+              <img src="images/Image6.sm.jpg" alt="Rider Photo" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--prices-->
+    <a class="anchor" id="pricing_anchor"></a>
+    <section id="pricing" class="section_layout">
+      <div class="container">
+        <h1>Pricing</h1>
+        <div class="pricing">
+          <div class="pricing-item">
+            <h3>Aggressor</h3>
+            <p>From $80</p>
+          </div>
+          <div class="pricing-item">
+            <h3>Assegai</h3>
+            <p>From $95</p>
+          </div>
+          <div class="pricing-item">
+            <h3>Disector</h3>
+            <p>From $105</p>
+          </div>
+          <div class="pricing-item">
+            <h3>HighRoller II</h3>
+            <p>From $75</p>
+          </div>
+          <div class="pricing-item">
+            <h3>MinionDHF</h3>
+            <p>From $130</p>
+          </div>
+          <div class="pricing-item">
+            <h3>MinionDHR</h3>
+            <p>From $130</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--form-->
+    <a class="anchor" id="contact_anchor"></a>
+    <section id="contact" class="section_layout">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <form id="contact-form">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name..."
+            required
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email..."
+            required
+          />
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Send Us a Message!"
+            required
+          ></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </div>
+    <footer>
+      <div class="container footer_copyright">
+        <p>Copyright &copy; 2024 - RUBR Tires</p>
+      </div>
+    </footer>
+  </body>
+</html>
