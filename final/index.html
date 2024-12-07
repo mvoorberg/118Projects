@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zach Voorberg Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="media/logo.png" alt="logo" class="nav-logo"> Zach Voorberg
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end fw-bold" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="#hero">Home</a>
+                    <a class="nav-link" href="#about">About Me</a>
+                    <a class="nav-link" href="#resume">Resume</a>
+                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                    <!-- Theme Switcher -->
+                    <div class="d-flex align-items-center ms-3">
+                        <label class="changeTheme mb-0">
+                            <input type="checkbox" name="changeTheme">
+                        </label>
+                        <span class="theme-label ms-2">Theme</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section id="hero" class="text-white text-center bg-dark py-5">
+        <div class="container">
+            <img src="media/logo.png" class="rounded-circle mb-4" alt="Profile" style="width: 150px; height: 150px;">
+            <h1>Hi, I'm Zach Voorberg!</h1>
+            <p class="lead">A passionate web developer crafting intuitive and modern experiences.</p>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="container mt-5">
+        <h2 class="text-center">About Me</h2>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-6">
+                <p>
+                    I am a new developer and tech enthusiast who loves creating unique solutions to interesting
+                    problems. When I'm not coding, you can find me mountain biking, exploring hiking trails, or playing
+                    new games.
+                </p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="media/profile.png" id="About_Me" class="img-fluid rounded mx-auto d-block">
+            </div>
+        </div>
+        <blockquote class="blockquote mt-4 text-center">
+            <p>"The best way to predict the future is to create it." - Peter Drucker</p>
+        </blockquote>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-dark">
+        <div class="container">
+            <h2 class="text-center">Skills</h2>
+            <div class="row justify-content-center mt-4">
+                <div class="col-lg-8">
+                    <h4>HTML</h4>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-success html-animation">90%</div>
+                    </div>
+                    <h4>CSS</h4>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-success css-animation">85%</div>
+                    </div>
+                    <h4>Bootstrap</h4>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-success bootstrap-animation">85%</div>
+                    </div>
+                    <!-- resume -->
+                    <div id="resume">
+                        <p class="text-center"><a href="media/resume.pdf" target="_blank" class="btn btn-success"
+                                download>Download My Resume!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="projects" class="container mt-5">
+        <h2 class="text-center">Projects</h2>
+        <!-- Masonry Wrapper -->
+        <div class="row g-3 mt-4" data-masonry='{"percentPosition": true }'>
+            <!-- Example Project Card -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card card-hover">
+                    <div class="image-container">
+                        <img src="media/example1.png" alt="Project Thumbnail">
+                        <a href="https://zachsmh.github.io/118Projects/midterm/index.html" target="_blank">
+                            <div class="overlay">Tire Brand Website</div>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <p>A clean and simple website to showcase a brand's tires for sale. This project used purely CSS and HTML,</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Example Project Card -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card card-hover">
+                    <div class="image-container">
+                        <img src="media/example2.png" alt="Project Thumbnail">
+                        <a href="https://zachsmh.github.io/118Projects/Lab03/index.html" target="_blank">
+                            <div class="overlay">Order Form</div>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <p>A simple orderform that can be easily repurposed for any type of product for sale. This project is a simple example of CSS styling,</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Example Project Card -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card card-hover">
+                    <div class="image-container">
+                        <img src="media/example3.png" alt="Project Thumbnail">
+                        <a href="https://zachsmh.github.io/118Projects/Lab05/index.html" target="_blank">
+                            <div class="overlay">Bakery Storefront</div>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <p>A multi-page storefront website for a bakery. This project is a multi page CSS based website.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Example Project Card -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card card-hover">
+                    <div class="image-container">
+                        <img src="media/example4.png" alt="Project Thumbnail">
+                        <a href="https://zachsmh.github.io/118Projects/Lab07/index.html" target="_blank">
+                            <div class="overlay">Advisor Booking Site</div>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <p>A simple website to select and book an appointment with an advisor. This uses the bootstrap's masonry.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Example Project Card -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card card-hover">
+                    <div class="image-container">
+                        <img src="media/place1.svg" alt="Project Thumbnail">
+                        <a href="" target="_blank">
+                            <div class="overlay">New Project</div>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <p>other project's description</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Example Project Card -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card card-hover">
+                    <div class="image-container">
+                        <img src="media/place1.svg" alt="Project Thumbnail">
+                        <a href="" target="_blank">
+                            <div class="overlay">New Project</div>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <p>other project's description</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="bg-dark py-5">
+        <div class="container">
+            <h2 class="text-center">Get in Touch</h2>
+            <form class="mt-4">
+                <div class="row mb-3">
+                    <div class="col-md-6" id="contact-inputs">
+                        <input type="text" class="form-control" placeholder="Your Name">
+                    </div>
+                    <div class="col-md-6" id="contact-inputs">
+                        <input type="email" class="form-control " placeholder="Your Email">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control " rows="5" placeholder="Your Message"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-success">Send Message</button>
+                </div>
+            </form>
+            <div class="text-center mt-4">
+                <p>Or connect with me on:</p>
+                <a href="https://linkedin.com" target="_blank"><img src="media/LinkedIn.png"></a>
+                <a href="https://github.com/ZachSmh" target="_blank"><img src="media/git.png"></a>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async></script>
+</body>
+
+</html>

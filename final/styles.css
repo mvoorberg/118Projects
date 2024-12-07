@@ -1,0 +1,283 @@
+/* Header logo */
+.nav-logo {
+  max-width: 7.5%;
+}
+
+/* Card Styling */
+.card-hover {
+  position: relative;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+  transform: scale(1.05);
+}
+
+/* dark overlay styles */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+
+#projects {
+  padding-bottom: 50px;
+}
+
+/* Skills Section */
+.progress-bar {
+  font-weight: bold;
+}
+
+
+/* Animation for HTML progress bar */
+.html-animation {
+  width: 0;
+  animation: fillHtml 1.5s ease-out forwards;
+}
+
+@keyframes fillHtml {
+  to {
+    width: 90%;
+  }
+}
+
+/* Animation for CSS progress bar */
+.css-animation {
+  width: 0;
+  animation: fillCss 2s ease-out forwards;
+}
+
+@keyframes fillCss {
+  to {
+    width: 85%;
+  }
+}
+
+/* Animation for Bootstrap progress bar */
+.bootstrap-animation {
+  width: 0;
+  animation: fillBootstrap 2.5s ease-out forwards;
+}
+
+@keyframes fillBootstrap {
+  to {
+    width: 85%;
+  }
+}
+
+
+/* contact styling */
+#contact input.form-control,
+#contact textarea.form-control {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+#contact-inputs {
+  padding-bottom: 10px;
+}
+#contact img{
+  max-width: 80px;
+  padding: 10px;
+}
+
+/* about styling */
+#About_Me {
+  max-width: 250px;
+  margin-top: 20px;
+  border-bottom: 3px solid #202020;
+  transition: border-color 0.3s ease;
+}
+
+#about .row {
+  display: flex;
+  align-items: center;
+}
+
+#About_Me:hover {
+  border-bottom: 3px solid green;
+}
+
+
+/* theme switching */
+
+/* Default light mode */
+body {
+  background-color: #ebebeb;
+  color: #313131;
+}
+
+/* Hero and Skills Section - Always Dark */
+#hero,
+#skills {
+  background-color: #161616;
+  color: white;
+}
+
+/* Theme Switcher Button */
+.changeTheme {
+  margin: 0px;
+  width: 40px;
+  height: 20px;
+  display: block;
+  background-color: #cbcbcb;
+  border-radius: 20px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.changeTheme::before {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  content: '';
+  border-radius: 50%;
+  transition: 0.5s;
+  box-shadow: 0 5px 10px #b5b4b4;
+}
+
+/* Theme Toggle Input Hidden */
+.changeTheme input {
+  display: none;
+}
+
+/* Dark mode styling */
+.changeTheme:has(input:checked) {
+  background-color: green;
+}
+
+.changeTheme:has(input:checked)::before {
+  left: calc(100% - 16px);
+}
+
+body:has(input:checked) {
+  background-color: #313131;
+  color: #ebebeb;
+}
+
+/* Adjust navbar in dark mode */
+body:has(input:checked) .navbar {
+  background-color: #414141 !important;
+}
+
+
+#hero,
+#contact,
+#skills {
+  color: white;
+  /* Override text to stay white in both modes */
+}
+
+.navbar {
+  background-color: #cbcbcb;
+}
+
+/* resume button */
+#resume {
+  padding-top: 50px;
+}
+
+/* Theme switcher container */
+.theme-switcher {
+  margin-top: 0px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.theme-label {
+  font-size: 14px;
+  color: #b9b9b9;
+  font-weight: bold;
+}
+
+/* label colour in dark mode */
+body:has(input:checked) .theme-label {
+  color: #ebebeb;
+}
+
+
+/* theme settings */
+.changeTheme input {
+  display: none;
+}
+
+.changeTheme:has(input:checked) {
+  background-color: green;
+}
+
+.changeTheme:has(input:checked)::before {
+  left: calc(100% - 16px);
+}
+
+body:has(input:checked) {
+  background-image: linear-gradient(to top, #0f1812, #4d4d4d);
+}
+
+/* Navbar dark mode styling */
+body:has(input:checked) .navbar {
+  background-color: #0f1614 !important;
+}
+
+body:has(input:checked) .navbar-nav .nav-link {
+  color: white !important;
+}
+
+body:has(input:checked) .navbar-brand {
+  color: white !important;
+}
+
+/* logo dark mode with invert filter */
+body:has(input:checked) #hero img {
+  filter: invert();
+}
+
+body:has(input:checked) .navbar img {
+  filter: invert();
+}
+
+body:has(input:checked) .navbar-toggler {
+  filter: invert();
+}
+/* Fonts */
+body {
+  font-family: 'Roboto', sans-serif; /* Content font */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif; /* Headers font */
+}
