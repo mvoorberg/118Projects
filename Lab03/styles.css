@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+form{
+    width: 100%;
+}
+.page-title{
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+p{
+    text-align: center;
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.container{
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#lname{
+    margin-bottom: 5px;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+#fname{
+    margin-bottom: 5px;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+#email{
+    margin-bottom: 5px;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+#number{
+    margin-bottom: 5px;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+#button{
+    text-align: center;
+    color: #fff;
+    background-color: #56AE57;
+    border-radius: 8px;
+    width: 100%;
+    padding: 8px;
+    box-shadow: none;
+    border: none;
+}
+#delivery{
+    padding: 5px;
+}
+h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#items{
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#p2{
+    text-align: left;
+    color: #000;
+    margin: 0px;
+}
+#instructions{
+    width: 100%;
+}
+#debit{
+    text-align: left;
+    transform: scale(1.5);
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-bottom: 15px;
+}
+#credit{
+    text-align: left;
+    transform: scale(1.5);
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-bottom: 15px;
+}
+#cash{
+    text-align: left;
+    transform: scale(1.5);
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-bottom: 15px;
+}
